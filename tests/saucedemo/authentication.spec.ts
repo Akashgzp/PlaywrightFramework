@@ -4,7 +4,7 @@ import { InventoryPage } from '../../pages/InventoryPage';
 
 test.describe('Sauce Demo Authentication', () => {
 
-  test('Authenticate with valid account and then log out', async ({ page }) => {
+  test('TC-01:Authenticate with valid account and then log out', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const inventoryPage = new InventoryPage(page);
 
@@ -30,7 +30,7 @@ test.describe('Sauce Demo Authentication', () => {
     });
   });
 
-  test('Verify locked-out user cannot authenticate', async ({ page }) => {
+  test('TC-02:Verify locked-out user cannot authenticate', async ({ page }) => {
     const loginPage = new LoginPage(page);
 
     await test.step('Open Sauce Demo login page', async () => {

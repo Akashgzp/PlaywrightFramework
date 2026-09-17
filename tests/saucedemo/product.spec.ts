@@ -4,7 +4,7 @@ import { LoginPage } from '../../pages/LoginPage';
 import { ProductPage } from '../../pages/ProductPage';
 
 test.describe('Sauce Demo Product Details', () => {
-  test('TC-06: Verify user can open a product details page', async ({ page }) => {
+  test('TC-03: Verify user can open a product details page', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const inventoryPage = new InventoryPage(page);
     const productPage = new ProductPage(page);
@@ -28,7 +28,7 @@ test.describe('Sauce Demo Product Details', () => {
     });
   });
 
-  test('TC-07: Verify product details', async ({ page }) => {
+  test('TC-04: Verify product details', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const inventoryPage = new InventoryPage(page);
     const productPage = new ProductPage(page);
@@ -59,7 +59,7 @@ test.describe('Sauce Demo Product Details', () => {
     });
   });
 
-  test('TC-08: Verify Add to Cart from ProductPage', async ({ page }) => {
+  test('TC-05: Verify Add to Cart from ProductPage', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const inventoryPage = new InventoryPage(page);
     const productPage = new ProductPage(page);

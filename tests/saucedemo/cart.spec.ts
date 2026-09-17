@@ -5,7 +5,7 @@ import { LoginPage } from '../../pages/LoginPage';
 import { ProductPage } from '../../pages/ProductPage';
 
 test.describe('Sauce Demo Cart', () => {
-  test('TC-09: Verify user can open the Cart page', async ({ page }) => {
+  test('TC-06:Verify user can open the Cart page', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const inventoryPage = new InventoryPage(page);
     const productPage = new ProductPage(page);
@@ -34,7 +34,7 @@ test.describe('Sauce Demo Cart', () => {
     });
   });
 
-  test('TC-10: Verify product details in Cart', async ({ page }) => {
+  test('TC-07: Verify product details in Cart', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const inventoryPage = new InventoryPage(page);
     const productPage = new ProductPage(page);
@@ -65,7 +65,7 @@ test.describe('Sauce Demo Cart', () => {
     });
   });
 
-  test('TC-11: Verify Remove Product from Cart', async ({ page }) => {
+  test('TC-08: Verify Remove Product from Cart', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const inventoryPage = new InventoryPage(page);
     const productPage = new ProductPage(page);
@@ -92,7 +92,7 @@ test.describe('Sauce Demo Cart', () => {
     });
   });
 
-  test('TC-12: Verify Continue Shopping', async ({ page }) => {
+  test('TC-09: Verify Continue Shopping', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const inventoryPage = new InventoryPage(page);
     const productPage = new ProductPage(page);
@@ -119,7 +119,7 @@ test.describe('Sauce Demo Cart', () => {
     });
   });
 
-  test('TC-13: Verify Checkout navigation', async ({ page }) => {
+  test('TC-10: Verify Checkout navigation', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const inventoryPage = new InventoryPage(page);
     const productPage = new ProductPage(page);
